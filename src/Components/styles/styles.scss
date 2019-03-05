@@ -1,29 +1,27 @@
 @mixin display {
-    @media (max-width: 700px) {
-      @content;
-    }
+  @media (max-width: 700px) {
+    @content;
   }
-@mixin display-mobile {
-    @media (max-width: 500px) {
-        @content;
-    }
 }
-  
-  * {
-    font-size: 14px;
-    color: #555;
+@mixin display-mobile {
+  @media (max-width: 500px) {
+      @content;
   }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .App-wrapper {
-    display: flex;
-  }
-  
-  .img-bg {
+}
+
+* {
+  font-size: 14px;
+  color: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  display: flex;
+  &__left-img {
     width: 50%;
     height: 100vh;
     background: url("https://images.unsplash.com/photo-1550757749-617f5cd8b197?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1000&h=2000&fit=crop&ixid=eyJhcHBfaWQiOjF9");
@@ -33,40 +31,7 @@
       display: none;
     }
   }
-  
-  label {
-    display: block;
-  }
-  
-  .checkbox {
-    display: block;
-  }
-  
-  .btn-group {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  form {
-    background-color: #fff;
-    padding: 24px 16px 32px 16px;
-    margin-bottom: 16px;
-    box-shadow: -2px 3px 8px 0 rgba(0, 0, 0, 0.23);
-  }
-  
-  .user-pass {
-    margin-bottom: 16px;
-    padding: 4px 8px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .lost-password {
-    margin-bottom: 16px;
-  }
-  .form-wrapper {
-    width: 300px;
-  }
-  .App {
+  &__primary {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,12 +42,43 @@
       width: 100%;
     }
   }
-  
-  input[type="checkbox"] {
+  &__form-wrapper {
+    width: 300px;
+  }
+  &__img-wrapper {
+    margin-bottom: 16px;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    height: 96px;
+  }
+  &__form {
+    background-color: #fff;
+    padding: 24px 16px 32px 16px;
+    margin-bottom: 16px;
+    box-shadow: -2px 3px 8px 0 rgba(0, 0, 0, 0.23);
+  }
+  &__input-name {
+    display: block;
+  }
+  &__input {
+    margin-bottom: 16px;
+    padding: 4px 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  &__btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__checkbox {
     margin: 0;
   }
-  
-  .login-btn {
+
+  &__login-btn {
     border: none;
     background-color: #60bafa;
     color: #fff;
@@ -90,26 +86,18 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  
-  a {
+
+  &__lost-password {
+    margin-bottom: 16px;
+  }
+
+  &__link {
     text-decoration: none;
     font: {
       size: 12px;
       weight: 600;
     }
-  }
-  
-  .img-wrapper {
-    margin-bottom: 16px;
-    img {
-      height: 96px;
-    }
-    line-height: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .link {
     padding-left: 16px;
-  }
-  
+    display: block;
+  }  
+}

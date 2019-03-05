@@ -32,46 +32,44 @@ class LoginForm extends Component {
   }
   render() {
     return (
-      <div className="form-wrapper">
-        <div className="img-wrapper">
+      <div className="login__form-wrapper">
+        <div className="login__img-wrapper">
           <img
+            className="login__image"
             src="https://images.unsplash.com/photo-1550852355-d04aff81523b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9"
             alt=""
           />
         </div>
-        <form onSubmit={this.onSubmit}>
-          <label>Username or Email address</label>
+        <form className="login__form" onSubmit={this.onSubmit}>
+          <label className="login__input-name">Username or Email address</label>
           <input
             type="text"
-            className="user-pass"
+            className="login__input"
             name="username"
             onChange={this.onHandleChange}
           />
-          <label>Password</label>
+          <label className="login__input-name">Password</label>
           <input
             type="password"
-            className="user-pass"
+            className="login__input"
             name="password"
             onChange={this.onHandleChange}
           />
-          <div className="btn-group">
-            <div className="checkbox">
+          <div className="login__btn-group">
+            <div className="login__checkbox-wrapper">
               <input
                 type="checkbox"
                 name="rememberme"
+                className="login__checkbox"
                 onChange={this.onHandleChange}
               />{" "}
               Remember me
             </div>
-            <button className="login-btn">Login</button>
+            <button className="login__login-btn">Login</button>
           </div>
         </form>
-        <div className="lost-password link">
-          <a href="/">Lost your password?</a>
-        </div>
-        <div className="link">
-          <a href="/"><FontAwesomeIcon icon='arrow-left'/>{' '}Back to uiCookies</a>
-        </div>
+          <a className="login__link login__lost-password" href="/">Lost your password?</a>
+          <a className="login__link" href="/"><FontAwesomeIcon icon='arrow-left'/>{' '}Back to uiCookies</a>
       </div>
     );
   }

@@ -7,9 +7,9 @@ import LoginForm from "./LoginForm";
 
 function App() {
     return (
-      <div className="App-wrapper">
-        <div className="img-bg" />
-        <div className="App">
+      <div className="login">
+        <div className="login__left-img" />
+        <div className="login__primary">
           <LoginForm />
         </div>
       </div>
