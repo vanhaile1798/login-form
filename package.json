@@ -2,8 +2,11 @@
   "name": "login-form-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "vanhaile1798.github.io/login-form",
+  "homepage": "https://vanhaile1798.github.io/login-form",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",

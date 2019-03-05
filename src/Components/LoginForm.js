@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 // import "../styles/styles.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class LoginForm extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class LoginForm extends Component {
   }
   onHandleChange(event) {
     let { name, value } = event.target;
-    if (event.target.type == "checkbox") {
+    if (event.target.type === "checkbox") {
       value = event.target.checked;
       console.log(value);
     }
@@ -69,7 +70,7 @@ class LoginForm extends Component {
           <a href="/">Lost your password?</a>
         </div>
         <div className="link">
-          <a href="/">Back to uiCookies</a>
+          <a href="/"><FontAwesomeIcon icon='arrow-left'/>{' '}Back to uiCookies</a>
         </div>
       </div>
     );
