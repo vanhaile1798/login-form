@@ -1,13 +1,13 @@
 {
-  "main.css": "vanhaile1798.github.io/login-form/static/css/main.0c410aca.chunk.css",
-  "main.js": "vanhaile1798.github.io/login-form/static/js/main.98c3a6d7.chunk.js",
-  "main.js.map": "vanhaile1798.github.io/login-form/static/js/main.98c3a6d7.chunk.js.map",
-  "runtime~main.js": "vanhaile1798.github.io/login-form/static/js/runtime~main.cfd34195.js",
-  "runtime~main.js.map": "vanhaile1798.github.io/login-form/static/js/runtime~main.cfd34195.js.map",
-  "static/js/2.a0d290c0.chunk.js": "vanhaile1798.github.io/login-form/static/js/2.a0d290c0.chunk.js",
-  "static/js/2.a0d290c0.chunk.js.map": "vanhaile1798.github.io/login-form/static/js/2.a0d290c0.chunk.js.map",
-  "index.html": "vanhaile1798.github.io/login-form/index.html",
-  "precache-manifest.d7653c13ec7910e22ce048fcd83957dc.js": "vanhaile1798.github.io/login-form/precache-manifest.d7653c13ec7910e22ce048fcd83957dc.js",
-  "service-worker.js": "vanhaile1798.github.io/login-form/service-worker.js",
-  "static/css/main.0c410aca.chunk.css.map": "vanhaile1798.github.io/login-form/static/css/main.0c410aca.chunk.css.map"
+  "main.css": "/login-form/static/css/main.0c410aca.chunk.css",
+  "main.js": "/login-form/static/js/main.1aa0fc2f.chunk.js",
+  "main.js.map": "/login-form/static/js/main.1aa0fc2f.chunk.js.map",
+  "runtime~main.js": "/login-form/static/js/runtime~main.8cd1cc8e.js",
+  "runtime~main.js.map": "/login-form/static/js/runtime~main.8cd1cc8e.js.map",
+  "static/js/2.a0d290c0.chunk.js": "/login-form/static/js/2.a0d290c0.chunk.js",
+  "static/js/2.a0d290c0.chunk.js.map": "/login-form/static/js/2.a0d290c0.chunk.js.map",
+  "index.html": "/login-form/index.html",
+  "precache-manifest.7939624e8c948bea4dc5888232234955.js": "/login-form/precache-manifest.7939624e8c948bea4dc5888232234955.js",
+  "service-worker.js": "/login-form/service-worker.js",
+  "static/css/main.0c410aca.chunk.css.map": "/login-form/static/css/main.0c410aca.chunk.css.map"
 }

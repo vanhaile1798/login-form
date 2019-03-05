@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "vanhaile1798.github.io/login-form/precache-manifest.d7653c13ec7910e22ce048fcd83957dc.js"
+  "/login-form/precache-manifest.7939624e8c948bea4dc5888232234955.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("vanhaile1798.github.io/login-form/index.html", {
+workbox.routing.registerNavigationRoute("/login-form/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
