@@ -43,7 +43,7 @@ body {
     }
   }
   &__form-wrapper {
-    width: 300px;
+    width: 250px;
   }
   &__img-wrapper {
     margin-bottom: 16px;
@@ -65,9 +65,11 @@ body {
   }
   &__input {
     margin-bottom: 16px;
-    padding: 4px 8px;
+    padding: 6px 8px;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #bbb;
+    background-color: #eee;
   }
   &__btn-group {
     display: flex;
