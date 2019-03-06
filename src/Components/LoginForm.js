@@ -68,8 +68,8 @@ class LoginForm extends Component {
             <button className="login__login-btn">Login</button>
           </div>
         </form>
-          <a className="login__link login__lost-password" href="/">Lost your password?</a>
-          <a className="login__link" href="/"><FontAwesomeIcon icon='arrow-left'/>{' '}Back to uiCookies</a>
+        <a className="login__link login__lost-password" href="/">Lost your password?</a>
+        <a className="login__link" href="/"><FontAwesomeIcon icon='arrow-left' />{' '}Back to uiCookies</a>
       </div>
     );
   }
