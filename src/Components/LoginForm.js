@@ -1,7 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 // import "../styles/styles.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class LoginForm extends Component {
   constructor(props) {
@@ -32,45 +34,43 @@ class LoginForm extends Component {
   }
   render() {
     return (
-      <div className="login__form-wrapper">
-        <div className="login__img-wrapper">
-          <img
-            className="login__image"
-            src="https://images.unsplash.com/photo-1550852355-d04aff81523b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=500&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9"
-            alt=""
-          />
-        </div>
-        <form className="login__form" onSubmit={this.onSubmit}>
-          <label className="login__input-name">Username or Email address</label>
+      <Fragment>
+        <form className="login-form" onSubmit={this.onSubmit}>
+          <label className="login-form__input-name" htmlFor='login-form__username-input'>Username or Email address</label>
           <input
             type="text"
-            className="login__input"
+            className="login-form__input"
             name="username"
+            id='login-form__username-input'
             onChange={this.onHandleChange}
           />
-          <label className="login__input-name">Password</label>
+          <label className="login-form__input-name" htmlFor='login-form__password-input'>Password</label>
           <input
             type="password"
-            className="login__input"
+            className="login-form__input"
+            id='login-form__password-input'
             name="password"
             onChange={this.onHandleChange}
           />
-          <div className="login__btn-group">
-            <div className="login__checkbox-wrapper">
+          <div className="login-form__btn-group">
+            <div className="login-form__checkbox-wrapper">
               <input
                 type="checkbox"
                 name="rememberme"
-                className="login__checkbox"
+                className="login-form__remember-checkbox"
+                id='login-form__remember-checkbox'
                 onChange={this.onHandleChange}
-              />{" "}
-              Remember me
+              />
+              {' '}
+              <label className='login-form__remember' htmlFor='login-form__remember-checkbox'>Remember me</label>
             </div>
-            <button className="login__login-btn">Login</button>
+            <button className="login-form__login-btn">Login</button>
           </div>
         </form>
-        <a className="login__link login__lost-password" href="/">Lost your password?</a>
-        <a className="login__link" href="/"><FontAwesomeIcon icon='arrow-left' />{' '}Back to uiCookies</a>
-      </div>
+        <Link className="login-form__link login-form__lost-password" to='/account-recovery'>Lost your password?</Link>
+        <Link className="login-form__link login-form__signup-btn" to='/signup'>Don't have a account? Sign up</Link>
+        <Link className="login-form__link" to='/'><FontAwesomeIcon icon='arrow-left' />{' '}Back to uiCookies</Link>
+      </Fragment>
     );
   }
 }
