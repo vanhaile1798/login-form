@@ -1,13 +1,13 @@
 {
   "main.css": "/login-form/static/css/main.010e55d0.chunk.css",
-  "main.js": "/login-form/static/js/main.491b2b31.chunk.js",
-  "main.js.map": "/login-form/static/js/main.491b2b31.chunk.js.map",
+  "main.js": "/login-form/static/js/main.4aeee056.chunk.js",
+  "main.js.map": "/login-form/static/js/main.4aeee056.chunk.js.map",
   "runtime~main.js": "/login-form/static/js/runtime~main.8cd1cc8e.js",
   "runtime~main.js.map": "/login-form/static/js/runtime~main.8cd1cc8e.js.map",
-  "static/js/2.7d3ee89c.chunk.js": "/login-form/static/js/2.7d3ee89c.chunk.js",
-  "static/js/2.7d3ee89c.chunk.js.map": "/login-form/static/js/2.7d3ee89c.chunk.js.map",
+  "static/js/2.db5d00d6.chunk.js": "/login-form/static/js/2.db5d00d6.chunk.js",
+  "static/js/2.db5d00d6.chunk.js.map": "/login-form/static/js/2.db5d00d6.chunk.js.map",
   "index.html": "/login-form/index.html",
-  "precache-manifest.2173c24c6db26a1972cb4f0e33505f4d.js": "/login-form/precache-manifest.2173c24c6db26a1972cb4f0e33505f4d.js",
+  "precache-manifest.7f35a4c3e1da74cb20fea4a68d19e754.js": "/login-form/precache-manifest.7f35a4c3e1da74cb20fea4a68d19e754.js",
   "service-worker.js": "/login-form/service-worker.js",
   "static/css/main.010e55d0.chunk.css.map": "/login-form/static/css/main.010e55d0.chunk.css.map"
 }
