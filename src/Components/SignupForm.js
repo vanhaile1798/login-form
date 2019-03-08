@@ -11,7 +11,8 @@ class SignupForm extends Component {
     this.state = {
       username: "",
       password: "",
-      confirmPassword: ""
+      confirmPassword: "",
+      email: ""
     };
     this.onHandleChange = this.onHandleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
